@@ -1,0 +1,253 @@
+/* Купа різних стилів */
+
+@font-face {
+  font-family: Helvetica;
+  src: url(fonts/Helvetica.ttf);
+}
+
+@font-face {
+  font-family: Helvetica-bold;
+  src: url(fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+  font-family: Helvetica-light;
+  src: url(fonts/HelveticaNeueLight.ttf);
+}
+
+.tile {
+    background-color: #ffffff;
+    margin: 10px;
+    display: inline-block;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #dddddd;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.tile:hover {
+    box-shadow: 0 0 10px #c0c0c0;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+/*tile inner*/
+.photoContainer {
+    float: left;
+    height: inherit;
+    width: 150px;
+    /* border: 1px solid rgb(219, 38, 38); */
+    border-radius: inherit;
+    background-color: rgb(247, 247, 247);
+}
+
+.tileImage {
+    transform: scale(0.8);
+    object-fit: contain;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.placeHolder {
+    display: inline-block;
+    text-align: center;
+    width: 56%;
+}
+
+.phoneNamePlaceHolder {
+    height: 50%;
+    font: 12pt Helvetica-bold;
+    vertical-align: middle;
+    padding: 5px 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.onePrice {
+    display: inline-block;
+    font: 12pt Helvetica-bold;
+    border: solid 2px #f7de01;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.newPrice {
+    background-color: #fffc31e8;
+    color: #8b7e00;
+    font: 12pt Helvetica-bold;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #c0c0c0;
+    display: inline-block;
+    font-size: 80%;
+}
+
+.phoneReviewsPlaceHolder {
+    height: 20%;
+    color: #0000b8;
+}
+
+.phonePricePlaceHolder {
+    height: 30%;
+}
+
+#mainContent {
+    padding: 50px 10%;
+    min-height: 750px;
+}
+
+div {
+    box-sizing : border-box;
+}
+
+.sortButtonSection {
+    margin: 0px 4px;
+    background-color: #ffe26e;
+    color: #000000;
+    border-radius: 3px;
+    display: inline-block;
+    box-shadow: 0 0 5px #6e6e6e;
+    transition: 0.3s ease-in-out;
+}
+
+.sortButtonSection::before {
+    margin: 0px 0px 0px 10px;
+    content: '\2713  ';
+    color: transparent;
+    font-family: Helvetica-bold;
+    transition: 0.3s ease-in-out;
+}
+
+.sortButtonSection:hover {
+    box-shadow: 0 0 3px #6e6e6e;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonName {
+    margin: 8px 0px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sortButton {
+    padding: 8px 8px;
+    background-color: #ffe26e;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    display: inline;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.selectedSortedButton {
+    background-color: #cca300;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.sortButtonSectionSelected {
+    box-shadow: 0 0 2px #6e6e6e;
+    transition: 0.3s ease-in-out;
+}
+
+.sortButtonSectionSelected::before {
+    color: #000000;
+}
+
+.showSale {
+    color: white;
+}
+
+.sortPanel {
+    padding: 5px 0px;
+}
+
+h6 {
+    font-size: 2em;
+    margin: 20px 0px 30px 0px;
+    cursor: default;
+    transition: 0.3s ease-in-out;
+}
+
+h6:hover {
+    color: #002981;
+    transition: 0.3s ease-in-out;
+}
+
+h6::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10b";
+}
+
+h6:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095";
+}
+
+header {
+    background-color: #ffefae;
+    padding: 2%;
+    font-family: Helvetica;
+    box-shadow: 0 0 10px #dddddd;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+body {
+    margin: 0px;
+    font-family: Helvetica-light;
+}
+
+footer {
+    position: sticky;
+    top: 50px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px 0px;
+    text-align: center;
+}
+
+.emptyPhones {
+    margin: 10px;
+    display: inline-block;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #dddddd;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.emptyPhones:hover {
+    box-shadow: 0 0 10px #c0c0c0;
+    transition: 0.3s ease-in-out;
+}
+
+.emptyPhones > * {
+    top: 70px;
+    position: relative;
+    margin: auto;
+    color: #bbbbbb;
+}
+
+.checkBox {
+    color: #949494;
+    cursor: pointer;
+}
+
+section {
+    background-color: #fffcf0;
+}
